@@ -6,11 +6,11 @@
 
 ```mermaid
 classDiagram
-    class Person {
+    class User {
         <<abstract>>
         -name: string
         +Name: string
-        +Person(name: string)
+        +User(name: string)
         +DisplayInfo()*
     }
     
@@ -43,16 +43,16 @@ classDiagram
         +DisplayCourseReport()
     }
     
-    Person <|-- Teacher
-    Person <|-- Student
+    User <|-- Teacher
+    User <|-- Student
     Course o-- Teacher
     Course *-- Student
     C 
-    class Person {
+    class User {
         <<abstract>>
         -name: string
         +Name: string
-        +Person(name: string)
+        +User(name: string)
         +DisplayInfo()*
     }
     
@@ -85,7 +85,7 @@ classDiagram
         +DisplayCourseReport()
     }
     
-    Person <|-- Teacher
-    Person <|-- Student
+    User <|-- Teacher
+    User <|-- Student
     Course o-- Teacher
     Course *-- Student
