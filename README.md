@@ -43,13 +43,11 @@ classDiagram
         +DisplayCourseReport()
     }
     
-    Person <|-- Teacher : Inherits
-    Person <|-- Student : Inherits
-    Course o-- Teacher : Has an Instructor
-    Course *-- Student : ContainsHas an I 
-
-```mermaid
-classDiagram
+    Person <|-- Teacher
+    Person <|-- Student
+    Course o-- Teacher
+    Course *-- Student
+    C 
     class Person {
         <<abstract>>
         -name: string
@@ -87,7 +85,7 @@ classDiagram
         +DisplayCourseReport()
     }
     
-    Person <|-- Teacher : Inherits
-    Person <|-- Student : Inherits
-    Course o-- Teacher : Has an Instructor
-    Course *-- Student : Contains Students
+    Person <|-- Teacher
+    Person <|-- Student
+    Course o-- Teacher
+    Course *-- Student
